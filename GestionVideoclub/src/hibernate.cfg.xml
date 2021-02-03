@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sakila?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.transaction.auto_close_session">false</property>
+    <property name="hibernate.show_sql">true</property>
+    <mapping resource="pojos/Payment.hbm.xml"/>
+    <mapping resource="pojos/Country.hbm.xml"/>
+    <mapping resource="pojos/Inventory.hbm.xml"/>
+    <mapping resource="pojos/FilmActor.hbm.xml"/>
+    <mapping resource="pojos/City.hbm.xml"/>
+    <mapping resource="pojos/Address.hbm.xml"/>
+    <mapping resource="pojos/Store.hbm.xml"/>
+    <mapping resource="pojos/FilmCategory.hbm.xml"/>
+    <mapping resource="pojos/Rental.hbm.xml"/>
+    <mapping resource="pojos/Category.hbm.xml"/>
+    <mapping resource="pojos/Language.hbm.xml"/>
+    <mapping resource="pojos/Customer.hbm.xml"/>
+    <mapping resource="pojos/Film.hbm.xml"/>
+    <mapping resource="pojos/Staff.hbm.xml"/>
+    <mapping resource="pojos/FilmText.hbm.xml"/>
+    <mapping resource="pojos/Actor.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>
